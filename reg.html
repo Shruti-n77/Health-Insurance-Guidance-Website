@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: bisque;
+  background-color: lightcyan;
+}
+
+form {
+  max-width: 400px;
+  margin: 35px auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: rgb(77, 74, 74);
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: rgb(168, 240, 177);
+  color: green;
+  margin-bottom: 10px;
+  display: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea,
+select {
+  background: pink;
+  border: 1px;
+  margin-bottom: 25px;
+  box-shadow: 2px;
+  color: rgb(8, 8, 8);
+  background-color:white;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  height: auto;
+  font-size: 15px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.section {
+  background-color: rgb(68, 114, 221);
+  color: white;
+  height: 29px;
+  display: inline-block;
+  width: 29px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 4px;
+  font-size: 0.7em;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 25px 40px;
+  color: rgb(10, 6, 6);
+  background-color: rgb(36, 159, 235);
+  font-size: 15px;
+  margin: 30px 0px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+}
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Registration Form</title>
+  </style>
+</head>
+
+<body>
+  <form action="C:\Users\shrut\OneDrive\Documents\project\thanks.html" method="POST" id="registrationform">
+    <h1>Get Quote</h1>
+    <div class="alert">Message Sent</div>
+
+   
+    <fieldset>
+      <legend><span class="section">1</span>Personal Information</legend>
+      <label class="" for="name">Name:</label>
+      <input type="text" name="name" value="" id="name" required />
+
+      <label class="" for="email">Email:</label>
+      <input type="email" name="email" value="" id="email" required />
+
+      <label for="password">password:</label>
+      <input type="password" name="password" value="" id="password" required />
+    </fieldset>
+
+   
+    <fieldset>
+      <legend><span class="section">2</span>To whom you want to take insurance </legend>
+      
+      <label for="fm">Family Member</label>
+      <select name="fm" id="fm" required>
+        <optgroup label="Members">
+          <option value="Children">Children</option>
+          <option value="Parents">Parents</option>
+          <option value="wife">Wife</option>
+        </optgroup>
+       
+      </select>
+      <br /><br />
+      <label>Insurance Type</label>
+
+      <select id="interest" required>
+        <option value="HMO (Health Maintenance Organization) Plans">HMO (Health Maintenance Organization) Plans</option>
+        <option value="Short-Term Health Insurance">Short-Term Health Insurance</option>
+        <option value="Medicare">Medicare</option>
+        <option value="Medicare">Employer-Sponsored Health Insurance</option>
+      </select>
+      <label class="" for="bio">Health Issue</label>
+      <textarea name="bio" id="bio" required></textarea>
+
+
+      <button type="submit" sendMessage(Submit Succesfull)>Submit</button>
+  </form>
+</body>
+
+</html>
